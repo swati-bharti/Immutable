@@ -1,20 +1,42 @@
 Task 3:
+
 Feature: Rewards a player once a day when they start an application.
+
 Happy Path and Edge Path Test Scenarios:
-1) Basic Test:
-This test is to check whether the feature works as expected or not.2) Basic test 2:
-In this test, the application is opened multiple times and checked whether the rewards are given to user every time or only once.3) Restart/ Power Scenario*:
-In this test, the application is opened the reward is collected. After collection of reward the system is restarted. Once the system is restarted the application is opened again and checked whether the reward is given or not4) Install Uninstall Scenario:
-In this test, the application is opened the reward is collected. The application is uninstalled and installed again. After new installation, the app is opened again and tested whether the reward is given or not. 5) Hang Scenario:
-In this test, the application is opened, during collection of reward the application hangs up and abruptly closes. In this situation, it is believed that the reward is not collected and when the application is opened again, we check whether the rewards are given to the user or not.6) Scheduled Rewards Scenario:
-In this test, I assume that if the reward is not collected at the start, after every 2 minutes the user will get a popup asking for claiming the reward.  In this test scenario, we check whether the popup comes at proper time with the proper details or not.
-*Power Scenario: in this scenario, we think that when the user opens the application, the user claims the reward and suddenly the system switches off. Now the system needs a restart and then we need to check. So, added it under restart scenario.
+
+1) Basic Test:
+This test is to check whether the feature works as expected or not.
+
+2) Basic test 2:
+In this test, the application is opened multiple times and checked whether the rewards are given to user every time or only once.
+
+3) Restart/ Power Scenario*:
+In this test, the application is opened the reward is collected. After collection of reward the system is restarted. 
+Once the system is restarted the application is opened again and checked whether the reward is given or not
+
+4) Install Uninstall Scenario:
+In this test, the application is opened the reward is collected. The application is uninstalled and installed again. 
+After new installation, the app is opened again and tested whether the reward is given or not. 
+
+5) Hang Scenario:
+In this test, the application is opened, during collection of reward the application hangs up and abruptly closes. 
+In this situation, it is believed that the reward is not collected and when the application is opened again, we check whether the rewards 
+are given to the user or not.
+
+6) Scheduled Rewards Scenario:
+In this test, I assume that if the reward is not collected at the start, after every 2 minutes the user will get a popup 
+asking for claiming the reward.  In this test scenario, we check whether the popup comes at proper time with the proper details or not.
+
+*Power Scenario: in this scenario, we think that when the user opens the application, the user claims the reward and suddenly the system switches off. Now the system needs a restart and then we need to check. So, added it under restart scenario.
 
 Automated Test Scenarios:
 
-1) Basic Test:* Open the application
+1) Basic Test:
+* Open the application
 * Check whether the rewards is shown to player or not
-2) Basic test 2:* Open the application
+
+2) Basic test 2:
+* Open the application
 * Skip the reward
 * Play the application for 30s
 * Close the application
@@ -22,24 +44,33 @@ Automated Test Scenarios:
 * Check whether the rewards is being shown or not
 * If shown claim the reward, close the application
 * Open application, the rewards should not show (expected behavior)
-3) Restart/ Power Scenario*:* Open the application
+
+3) Restart/ Power Scenario*:
+* Open the application
 * Claim the reward
 * Restart the system
 * Open the application
 * Check whether the reward is shown or not
-4) Install Uninstall Scenario:* Open the application
+
+4) Install Uninstall Scenario:
+* Open the application
 * Claim the reward
 * Uninstall the application
 * Install the application
 * Open the application
 * Check whether the reward is shown or not
-5) Hang Scenario:* Open the application
+
+5) Hang Scenario:
+* Open the application
 * Claim the reward
 * Close the app and wait for 30s (To simulate hang)
 * Open the application
 * Check whether the reward is shown or not
-6) Scheduled Rewards Scenario:* Open the application
+
+6) Scheduled Rewards Scenario:
+* Open the application
 * Skip the reward
 * Run the app for 3 minutes
 * After 2 min check if the popup for reward comes up or not.
-All the above-mentioned steps for all the scenarios can be automated.
+
+All the above-mentioned steps for all the scenarios can be automated.
