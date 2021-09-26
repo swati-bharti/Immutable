@@ -1,0 +1,16 @@
+Task 2:
+
+Recently, I have played cricket game. I want to pickup scoreboard as a feature.
+The scoreboard consists of various information like total runs, score of each batsman, number of overs, number of balls left in over, wickets, bowler name and over details.
+
+Testing the feature:
+1. Basic Test:
+In this test, we check whether the scoreboard filled with details is visible once the game starts.
+2. Values Test:
+In this test, we check the values like total runs, score of each batsman, number of overs number of balls left in the over, bowler name and over details are updated properly and no multiple updates are done for a single ball.
+	2.1.  Check the values by switching the apps:
+              Once the values come on the scoreboard, let the game play for 20s, there will be some update in score, validate them, if everything works fine, switch to another application be there for 30 seconds, open the cricket game again and check the values of the scoreboard whether it shows the previous value or a new score board.
+	2.2.  Check value for no ball and wide:
+	      In this test, we simulate the bowlers such that they put only no ball and wide along with 1 or 2 normal throws. The scoreboard feature here should not update any score or ball count of the over if it is a no ball or wide ball. If there is a free shot after no ball, then the score needs to be updated. For balls other than wide and no ball the value needs to be updated and count of the ball also needs to be updated.
+	2.3.  Check individual scores of each batsman and bowler’s details:
+              In this test, the scores of each batsman are checked to confirm that the correct score is updated to the right batsman after each score update and check the name of the bowler and number of balls thrown by the bowler is matching or not.
